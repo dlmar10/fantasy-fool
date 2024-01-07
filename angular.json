@@ -99,6 +99,23 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "version": 2
+          },
+          "configurations": {
+            "production": {
+              "buildTarget": "fantasy-fool:build:production",
+              "serveTarget": "fantasy-fool:serve:production"
+            },
+            "development": {
+              "buildTarget": "fantasy-fool:build:development",
+              "serveTarget": "fantasy-fool:serve:development"
+            }
+          },
+          "defaultConfiguration": "production"
         }
       }
     }

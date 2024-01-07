@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "fantasy-fool": {
+      "hosting": {
+        "fantasy-fool": [
+          "fantasy-fool"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "fantasy-fool"
+  }
+}
