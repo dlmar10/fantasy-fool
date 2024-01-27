@@ -1,0 +1,17 @@
+<div class="grid-container">
+  <h1 class="mat-h1">Home</h1>
+  <mat-grid-list cols="1" rowHeight="350px">
+    <mat-grid-tile>
+      <mat-card class="dashboard-card">
+        <mat-card-header>
+          <mat-card-title>
+            Login to Sleeper
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content class="dashboard-card-content">
+          <app-login-form (onYesClick)="onLogin($event)"></app-login-form>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

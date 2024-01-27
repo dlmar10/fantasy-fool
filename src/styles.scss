@@ -12,8 +12,9 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$fantasy-fool-primary: mat.define-palette(mat.$cyan-palette);
+$fantasy-fool-primary: mat.define-palette(mat.$green-palette);
 $fantasy-fool-accent: mat.define-palette(mat.$amber-palette);
+$fantasy-fool-typography: mat.define-typography-config();
 
 // The warn palette is optional (defaults to red).
 $fantasy-fool-warn: mat.define-palette(mat.$deep-orange-palette);
@@ -25,7 +26,8 @@ $fantasy-fool-theme: mat.define-dark-theme((
     primary: $fantasy-fool-primary,
     accent: $fantasy-fool-accent,
     warn: $fantasy-fool-warn,
-  )
+  ),
+  typography: $fantasy-fool-typography
 ));
 
 // Include theme styles for core and each component used in your app.

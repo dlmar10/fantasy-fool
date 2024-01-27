@@ -1,0 +1,12 @@
+<div mat-dialog-content>
+  <p>
+    <mat-form-field class="login-dialog-input">
+      <mat-label>League ID</mat-label>
+      <input matInput [formControl]="leagueId" required>
+    </mat-form-field>
+  </p>
+</div>
+<div mat-dialog-actions align="end">
+  <button *ngIf="showNevermind" mat-button (click)="onNevermindClick()">Nevermind</button>
+  <button mat-button (click)="onLoginClick()" [disabled]="leagueId.invalid">Login</button>
+</div>

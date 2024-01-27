@@ -1,0 +1,13 @@
+<div class="header-login">
+  @if (league) {
+    {{ league?.name }}
+
+    <button mat-icon-button class="toolbar-icon" aria-label="Log Out" (click)="handleLogout()">
+      <mat-icon>logout</mat-icon>
+    </button>
+  } @else {
+    <button mat-icon-button class="toolbar-icon" aria-label="Log In" (click)="handleLogin()">
+      <mat-icon>login</mat-icon>
+    </button>
+  }
+</div>
